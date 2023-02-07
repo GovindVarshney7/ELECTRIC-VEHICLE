@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle & Lithium-Ion Battery Training</title>
+    <link rel="icon" type="image/x-icon" href="saitech-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+        .container-fluid {
+            margin: 0vw 4vw;
+        }
+
+        .navbar-nav {
+            margin-left: 15vw;
+        }
+
+        .navbar-nav li {
+            margin-left: 1.5vw;
+            font-weight: 600;
+        }
+
+        .btn {
+            border: 1px solid #111931;
+            color: #f7593e;
+        }
+
+        .btn:hover {
+            border: 1px solid #f7593e;
+            color: white;
+            background-color: #f7593e;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 550px) {
+            #main {
+                /* width: 100%;  */
+                overflow: hidden;
+            }
+
+            #page1 {
+                /* width: 100%; */
+                min-height: 120vh;
+                padding: 1vw;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #page1Up {
+                height: 15vh;
+            }
+
+            #page1Up>h1 {
+                /* margin-top: -2vw; */
+                font-size: 7vw;
+                line-height: 8vw;
+                /* font-family: font1SemiBold; */
+                margin: 9vw 0;
+            }
+
+            #page1Up>h2 {
+                font-size: 4.2vw;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 6vw;
+                /* margin-bottom: 0; */
+            }
+
+            #page1DownLeft {
+                /* align-self: center; */
+                width: 95%;
+                /* height: 1005vh; */
+                /* background-color: #31b85a; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #page1DownRight {
+                margin-top: 5vw;
+                width: 100%;
+            }
+
+            #page1DownLeftDate {
+                height: 10vw;
+                font-size: 5vw;
+                font-weight: 300;
+            }
+
+            #Page1DownLeftCenter {
+                flex-direction: column;
+            }
+
+            #page1DownLeftDaily,
+            #page1DownLeftLive {
+                width: 100%;
+                height: 5vh;
+                font-size: 5vw;
+                margin-bottom: 2vw;
+                border-radius: 20px;
+            }
+
+            #page1DownLeftTime {
+                width: 100%;
+
+                /* background-color: red; */
+                padding: 0vw;
+                justify-content: space-around;
+            }
+
+            .p1TimeH1 {
+                width: 20vw;
+                height: 20vw;
+            }
+
+            .p1TImeH2 {
+                margin-top: 0.5vw;
+                font-size: 4.5vw;
+                text-align: center;
+            }
+
+            #page1DownLeftReserve {
+                width: 90%;
+                height: 8vh;
+                font-size: 6vw;
+                margin-top: 4vw;
+            }
+
+            #page1Down2 {
+                height: 70vw;
+                margin-top: 10vw;
+            }
+
+            #page1Down2div {
+                width: 90%;
+                height: 25vh;
+            }
+
+            #page1Down2div>:nth-child(1) {
+                font-family: font1SemiBold;
+            }
+
+            #page1Down2div>:nth-child(2) {
+                font-size: 5.8vw;
+            }
+
+            #page1Down2div>:nth-child(3) {
+                font-size: 6vw;
+                text-decoration: none;
+            }
+
+            #page1Down2H2 {
+                font-size: 5vw;
+                text-align: center;
+                padding: 3vw;
+                font-family: font1SemiBold;
+            }
+
+            #page2 {
+                padding: 5vw;
+            }
+
+            #page2>h1 {
+                font-family: font1Bold;
+                text-align: center;
+                font-size: 8.3vw;
+                color: black;
+                margin-top: 5vw;
+            }
+
+            #page2>h3 {
+                font-size: 4.5vw;
+                font-weight: 700;
+                font-family: font1Bold;
+                margin-top: 3vw;
+                text-align: center;
+            }
+
+            .p2Day1-2 {
+                flex-direction: column;
+            }
+
+            .p2Days {
+                width: 100%;
+                margin-bottom: 1vw;
+            }
+
+            .p2DayInnerDiv {
+                height: 1vw;
+                width: 100%;
+                font-size: 8vw;
+                margin-bottom: 1vw;
+            }
+
+            ul>li {
+                font-size: 5vw
+            }
+
+            .p2Day3Inner {
+                width: 100%;
+                /*        min-height:40vh ;*/
+                display: flex;
+                justify-content: space-between;
+                padding: 0vw 9vw;
+                flex-direction: column;
+            }
+
+            .p2Day3Inner>ul {
+                width: 100%;
+            }
+
+            #page3 {
+                min-height: 100vh;
+            }
+
+            #page3>h1 {
+                font-size: 10vw;
+                width: 65%;
+                margin-bottom: 10vw;
+            }
+
+            .page3Ul {
+                flex-direction: column;
+                width: 100%;
+                /* background-color: #111931; */
+                min-height: 70vh;
+
+
+            }
+
+            .page3Ul>ul {
+                min-height: 20vw;
+                font-size: 5vw;
+
+                /* margin: 0; */
+                padding: 0;
+            }
+
+            .page3Ul>ul>li {
+                min-height: 15vw;
+                width: 80vw;
+                font-size: 5vw;
+                margin-bottom: 4vw;
+            }
+
+            #page4 {
+                min-height: 60vh;
+            }
+
+            #page4>h1 {
+                font-size: 7vw;
+                text-align: center;
+                padding-bottom: 4vw;
+            }
+
+            .page4Time {
+                width: 90vw;
+                padding: 0 0vw;
+                margin-top: 5vw;
+            }
+
+            .p4TimeH1 {
+                width: 20vw;
+                height: 20vw;
+                padding: 0;
+                margin: 0;
+                font-size: 8vw;
+                letter-spacing: 0;
+            }
+
+            .p4TImeH2 {
+                font-size: 5vw;
+                margin-top: 3vw;
+            }
+
+            .page4DirectSelling {
+                width: 90vw;
+                height: 20vw;
+                font-size: 7vw;
+                font-family: font1Bold;
+                padding: 13vw;
+                line-height: 7vw;
+                margin-top: 5vw;
+                margin-bottom: 10vw;
+            }
+
+            #page5 {
+                min-height: 200vh;
+            }
+
+            #page5>h1 {
+                font-size: 9vw;
+                color: black;
+                margin: 8vw 0;
+            }
+
+            .p5Div {
+                flex-direction: column;
+            }
+
+            .pg5Pic {
+                width: 100%;
+                height: 60vh;
+                border: 2px solid #111931;
+                margin-bottom: 5vw;
+            }
+
+            .pg5Right {
+                font-size: 5vw;
+                width: 100%;
+            }
+
+            #page6>h1 {
+                font-size: 10vw;
+                color: black;
+                text-align: center;
+                margin-top: 5vw;
+            }
+
+            #list-example {
+                display: none;
+            }
+
+            .p6Div {
+                height: 70vh;
+                width: 110vw;
+                margin-bottom: 5vw;
+            }
+
+            #page7>h1 {
+                font-size: 7vw;
+                text-align: center;
+                margin: 7vw 0;
+            }
+
+            #page7>h3 {
+                font-size: 7vw;
+                text-align: center;
+                border: none;
+            }
+
+            .p7Divs {
+                flex-direction: column;
+            }
+
+            .p7Div {
+                width: 100%;
+                /* height: 20vh; */
+                margin-bottom: 10vw;
+                padding: 2vw;
+            }
+
+            .p7Div>.p7DivInner {
+
+                height: 15vw;
+                width: 10vw;
+            }
+
+            .p7Div>h2 {
+                font-size: 4.5vw;
+                font-family: font1SemiBold;
+                color: #111931de;
+            }
+
+            #page8 {
+                height: 30vh;
+            }
+
+            #page8Up {
+                width: 100%;
+                height: 100%;
+            }
+
+            #page8Up h2 {
+                font-size: 8vw;
+            }
+
+
+
+            #email {
+                width: 100%;
+                height: 5vh;
+                margin: 7vw 0 2vw 0;
+            }
+
+            #submit {
+                width: 100%;
+                height: 5vh;
+
+            }
+
+            #page8Up p {
+                display: none;
+            }
+
+            #page8Down {
+                height: 8vh;
+                justify-content: space-around;
+            }
+
+            .page8DownDiv {
+                margin: 0vw;
+            }
+            .p2DayInnerDiv {
+                height: 70px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <nav class="navbar navbar-expand-lg " style="background-color: #e3eef3;min-height:4.2em">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="saitech-removebg-preview.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top" style="position: absolute; top: -10px;">
+                    
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#page1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page2">Training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page7">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page6">Fedbacks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page8">Contect-Us</a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="page1">
+
+            <div id="page1Up">
+                <h1>SIRF 5 DAYS MEIN SIKHE KAISE Electric Vehicle & Lithium-Ion Battery ME APNA CAREER BANAYE</h1>
+
+            </div>
+            <div id="page1Down">
+                <div id="page1DownLeft">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_ERmFuslBy0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="page1DownRight">
+                    <div id="page1DownLeftDate">🎯 10 Feb to 14 Feb 2023 </div>
+                    <div id="Page1DownLeftCenter">
+                        <div id="page1DownLeftDaily">⌛5 Days Training</div>
+                        <div id="page1DownLeftLive">🎥Practical Session</div>
+                    </div>
+                    <div id="page1DownLeftTime">
+                        <div id="page1TimeDay">
+                            <h1 class="p1TimeH1 day">00</h1>
+                            <h2 class="p1TImeH2">Days</h2>
+                        </div>
+                        <div id="page1TimeHour">
+                            <h1 class="p1TimeH1 hour">00</h1>
+                            <h2 class="p1TImeH2 ">Hours</h2>
+                        </div>
+                        <div id="page1TimeMin">
+                            <h1 class="p1TimeH1 minute">00</h1>
+                            <h2 class="p1TImeH2 ">Minutes</h2>
+                        </div>
+                        <div id="page1TimeSec">
+                            <h1 class="p1TimeH1 second">00</h1>
+                            <h2 class="p1TImeH2">Seconds</h2>
+                        </div>
+                    </div>
+                    <div id="page1DownLeftReserve">
+                        <a
+                            href="https://payu.in/invoice/2705CAC9B63B1B592175D0F174E44FAF7E7188F585220534625FAFB9C5BA7A91/274DC588200ECFDE70D0416F639367F0">Reserve
+                            a Seat</a>
+                    </div>
+                </div>
+            </div>
+            <div id="page1Down2">
+                <div id="page1Down2div">
+                    <h3>Workshop Charges: <spam>25000/-</spam>
+                    </h3>
+                    <h2> Limited Time Offer:</h2>
+                    <h2>₹20000/- only.. </h2>
+                </div>
+                <h4 id="page1Down2H2">For any Query call - 7723828181, 7000824339, 9685580822</h4>
+            </div>
+        </div>
+        <div id="page2">
+            <h1>Hi, I am Sanyam Indurkhya.</h1>
+            <h3>HERE'S WHAT YOU'LL DISCOVER IN THIS 5 DAYS TRAINING:</h3>
+            <div class="p2Day1-2 ">
+                <div class="p2Day1 p2Days shadow ">
+                    <div class="p2DayInnerDiv">Day #1</div>
+                    <ul>
+                        <li>Historical Background of Ev & Hev</li>
+                        <li>Benefits of Driving an Electric Vehicle</li>
+                        <li>Overview Types of Evs</li>
+                        <li>Infrastructure & Challenges of Evs & Hevs in India</li>
+                        <li>Block Diagram of Ev</li>
+
+                    </ul>
+                </div>
+                <div class="p2Day2 p2Days shadow ">
+                    <div class="p2DayInnerDiv">Day #2</div>
+                    <ul>
+                        <li>Basic Components of Electric vehicle </li>
+                        <li>Prospecting kyun important hai?</li>
+                        <li>Motor Drive Unit & Controller</li>
+                        <li>Throttle, Display, Battery, Charger, DC to DC Converter,
+                            Wire connectors, Anti-Theft, Indicator, Head light & Key
+                            switch, MCB & all Sensor using on Ev. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p2Day3 p2Days shadow ">
+                <div class="p2DayInnerDiv">Day #3</div>
+                <div class="p2Day3Inner p2Days ">
+                    <ul class="p2Days">
+                        <li>Petrol to Electric Conversion technique</li>
+                        <li>Electric vehicle charging station set-up</li>
+                    </ul>
+                    <ul class="p2Days">
+                        <li>Govt. policy of electric vehicles & charging station in India.</li>
+                        <li>Type of electric-vehicle business opportunities in India.</li>
+                    </ul>
+                </div>
+                <br><br>
+                <div>
+                    <ul style="color: #182446;
+    font-size: 1.5em;
+    font-weight: 500;list-style-type: none;text-align: center; margin-top: -3vw;">
+                        <hr>
+                        🎯3days Electric Vehicle Training
+                        <li>Date – 10, 11, 12 Feb. 2023 </li>
+                        <li>Training Fees : 15,000/-</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="p2Day1-2 ">
+                <div class="p2Day1 p2Days shadow ">
+                    <div class="p2DayInnerDiv">Day #4</div>
+                    <ul>
+                        <li>Introduction: Energy bank/Storage system/Battery Pack</li>
+                        <li>Type of Battery Pack( A brief overview)</li>
+                        <li>Electric Power Parameters.</li>
+                        <li>AC to DC & DC to AC.</li>
+                        <li>Cell & Battery Pack Parameters. </li>
+                        <li>Lead Acid Battery, Gel Battery, Nickel based Battery, Lithium Batteries,
+                            Super capacitor & “Smart” Battery Working & Technical Parameters.</li>
+                        <li>Lithium vs Lead Acid Battery.</li>
+                        <li>Efficiency Cost, Size, Life Cycle, Maintenance, Charging Unit.</li>
+
+
+                    </ul>
+                </div>
+                <div class="p2Day2 p2Days shadow ">
+                    <div class="p2DayInnerDiv">Day #5</div>
+                    <ul>
+                        <li>Connecting Battery in Series & Parallel.</li>
+                        <li>BMS- Battery Management System.</li>
+                        <li>EV Battery Pack Capacity Calculation.
+                        </li>
+                        <li>Battery Testing and Monitoring Charge and Discharge Methods.
+                        </li>
+                        <li>How to make Batteries more Reliable. Safety of Lithium-ion Batteries
+                        </li>
+                        <li>Govt. guidelines and subsidies under fame scheme.</li>
+                        <li>Practical Demonstration of Li-Battery Making Testing And Pricing.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div id="page3">
+            <h1>Why Join??</h1>
+            <ul class="page3Ul">
+                <ul>
+                    <li>Learn From Experienced Industry Person</li>
+                    <li>Practical Session to Learn Things.</li>
+                    <li>Job Opportunity</li>
+                </ul>
+                <ul>
+                    <li>EV Franchise and Dealership
+</li>
+                    <li></li>
+                    <li>9 to 5 job se Fed-up</li>
+                </ul>
+            </ul>
+        </div> -->
+        <div id="page4">
+            <h1>This Training Is Limited, So Register NOW!</h1>
+            <div class="page4Time">
+                <div id="page4TimeDay">
+                    <h1 class="p4TimeH1 p4day">00</h1>
+                    <h2 class="p4TImeH2">Days</h2>
+                </div>
+                <div id="page4TimeHour">
+                    <h1 class="p4TimeH1 p4hour">00</h1>
+                    <h2 class="p4TImeH2">Hours</h2>
+                </div>
+                <div id="page4TimeMin">
+                    <h1 class="p4TimeH1 p4minute">00</h1>
+                    <h2 class="p4TImeH2">Minutes</h2>
+                </div>
+                <div id="page4TimeSec">
+                    <h1 class="p4TimeH1 p4second">00</h1>
+                    <h2 class="p4TImeH2">Seconds</h2>
+                </div>
+            </div>
+            <div class="page4DirectSelling"><a
+                    href="https://payu.in/invoice/2705CAC9B63B1B592175D0F174E44FAF7E7188F585220534625FAFB9C5BA7A91/274DC588200ECFDE70D0416F639367F0">
+                    MAKE YOUR BRIGHT FUTURE IN ELECTRIC VEHICAL</a></div>
+        </div>
+        <!-- <div id="page5">
+            <h1>About You Coach:</h1>
+            <div class="p5Div">
+                <div class="pg5Pic"></div>
+                <div class="pg5Right">
+                    <strong>Mr. </strong> India ke leading <span style="text-decoration: underline;">Digital Network Marketing Coach</span> hain aur saath hi Inspirational Speaker bhi. Unki kahawat – no don’ts or can’t or won’t, only endless possibilities with the Self, bohot hi famous hai.
+                    <br><br>
+                    Dr Lalit Arora <span style="text-decoration: underline;">KW Academy of Excellence ke Founder</span> aur Blue Ocean Prospecting ke inventor hain. Network Marketing Industry mein pehli baar, Dr. Lalit Arora Network Marketing ki duniya mein aapke liye ek Latest Revolutionary Invention le kar aaye hain <strong>- The BOP Formula</strong>. Ye formula Direct Selling se jude har problem ko solve karne ke liye teste hai.<span style="text-decoration: underline;"> 24 saal ke experience aur 30 lakh se bhi zyada logon ko train </span>karke ye formula Network Marketing Industry mein dhoom macha raha hai.
+                    <br><br>
+                    Dr. Lalit ke holistic approach ke karan dusre kayi industry ke log bhi Network Marketing mein benefited hue hain. Unhone 2000 se bhi zyada successful seminars, speeches, TV shows appearances ki hai aur unhe Network Marketing ke har aspect ka poora knowledge aur expertise hai.
+            </div>
+            </div>
+        </div> -->
+        <div id="page6">
+            <h1>Feedback by Attendees</h1>
+            <div class=" p6Div">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">
+                        <li>Item 1</li>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">
+                        <li>Item 2</li>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">
+                        <li>Item 3</li>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">
+                        <li>Item 4</li>
+                    </a>
+                    <!-- <a class="list-group-item list-group-item-action" href="#list-item-5"><li>Item 5</li></a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6"><li>Item 6</li></a>  -->
+                </div>
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                    tabindex="0">
+                    <div class="listItems">
+                        <h4 id="list-item-1">Likhit Sharma</h4>
+                        <p>I am working from 3 months. I like so much this company cause in this company working culutre
+                            and
+                            the way of treating as a employees its very good.I think this is the good and best place for
+                            work as a freshers..</p>
+                    </div>
+                    <div class="listItems">
+                        <h4 id="list-item-2">Jayesh Patel</h4>
+                        <p>I Loved this course alot becuase it helps me to find job in electric vehicle field. This is a
+                            growing era as i see. I highly recommend</p>
+                    </div>
+                    <div class="listItems">
+                        <h4 id="list-item-3">Niyam Joshi</h4>
+                        <p>Perfect Place to Learn About How Electric Vehicle Manufacture and how we can work on
+                            Lithium-Ion
+                            Battery. Thank You So much Team for making my investment worthy</p>
+
+                    </div>
+                    <div class="listItems">
+                        <h4 id="list-item-4">Niyam Joshi</h4>
+
+                        <p>Perfect Place to Learn About How Electric Vehicle Manufacture and how we can work on
+                            Lithium-Ion
+                            Battery. Thank You So much Team for making my investment worthy</p>
+                    </div>
+
+                    <!-- <h4 id="list-item-4">Item 4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore obcaecaorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore obcaecabitis culpa, quos quam exercitationem earum a temporibus sapiente recusandae alias mollitia!</p>
+                    <h4 id="list-item-5">Item 5</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, quos quam exercitationem earum a temporibus sapiorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore obcaecaorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore obcaecaente recusandae alias mollitia!</p>
+                    <h4 id="list-item-6">Item 6</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, quos quam exercitationem earum a temporibus sapiente recusandae alias mollitia!</p> -->
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+            <h1>Customize Your Course!</h1>
+            <h3> 5 Days Course Fee ₹ 20000/- with Discount </h3>
+            <div class="p7Divs">
+                <div class="p7Div">
+                    <img class="p7DivInner" src="https://media.swipepages.com/2021/8/technical-support-300.png" alt="">
+
+                    <h2>3 Days Electric Vehicle Training
+                        <br> 15000/- Only
+                    </h2>
+                </div>
+                <div class="p7Div">
+                    <img class="p7DivInner" src="https://media.swipepages.com/2021/8/illustration-300.png" alt="">
+                    <h2>2 Days Lithium-Ion Battery
+                        <br>10000/- Only
+                    </h2>
+                </div>
+                <div class="p7Div">
+                    <img class="p7DivInner" src="https://media.swipepages.com/2021/8/ebook--1--300.png" alt="">
+                    <h2>5 Days Complete Training <br>20000/-Only</h2>
+                </div>
+            </div>
+        </div>
+        <div id="page8">
+            <div id="page8Up">
+                <form action="index.html">
+                    <h2>Let's Stay In Touch</h2>
+                    <input type="email" name="" id="email" placeholder="Enter your e-mail address">
+                    <input type="submit" value="Submit Now" id="submit">
+                    <p>We repect your privacy,So we never share your info.</p>
+                </form>
+            </div>
+
+        </div>
+        <div id="page8Down" style="font-size: 1.2em;">
+            <div id="page8DownDiv1" class="page8DownDiv"><i class="ri-instagram-line"></i> Instagram</div>
+            <div id="page8DownDiv2" class="page8DownDiv"><i class="ri-twitter-fill"></i> Twitter</div>
+            <div id="page8DownDiv3" class="page8DownDiv"><i class="ri-facebook-line"></i> Facebook</div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
